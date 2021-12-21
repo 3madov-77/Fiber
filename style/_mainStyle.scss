@@ -1,0 +1,245 @@
+body {
+    background-color: $notQuietWhite;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Roboto';
+    justify-content: center;
+    overflow-x: hidden;
+}
+
+.topNav {
+    justify-content: space-between;
+    display: flex;
+
+    .logo {
+        @include Logo();
+    }
+
+    .hMenuContainer {
+        position: relative;
+        z-index: 1;
+    }
+
+    .navLinks-1, .navLinks-2 {
+        display: none;
+
+        a {
+            text-decoration: none;
+            color: $darkGery;
+            font-size: 18px;
+        }
+    }
+
+    .navLinks-2 {
+        a {
+            font-weight: 900;
+        }
+
+        :nth-child(2) {
+            border-radius: 10px;
+            color: $white;
+            background-color: $blueBurple;
+        }
+    }
+}
+
+.section-2 {
+    display: flex;
+
+    .s2Hero {
+        position: relative;
+        z-index: 0;
+    }
+
+    .s2Pargraph {
+        @include Paragraphs();
+    }
+
+    .s2Content {
+
+        .s2Content2 {
+            display: flex
+        }
+
+        .s2Button {
+            @include buttons();
+        }
+
+        .s2Examples {
+            font-size: 20px;
+            font-weight: 600;
+            text-align: center;
+        }
+
+        .s2List {
+            display: flex;
+
+            .checkMark {
+                background-image: url('../assets/Checkmark.svg');
+                background-repeat: no-repeat;
+                color: $darkGery;
+                font-size: 18px;
+            }
+        }
+    }
+
+
+}
+
+.section-3 {
+    background-color: $white;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+    .s3Title {
+        // not importanat if it was lower than 1
+        letter-spacing: 0.3px;
+        font-weight: 700;
+        font-size: 18px;
+        color: $blueBurple;
+    }
+
+    .fetures {
+        display: flex;
+
+        .s3Fetures {
+            display: flex;
+
+            .fPargraph {
+                color: $darkGery;
+                font-size: 20px;
+                line-height: 28px;
+                opacity: 0.8;
+            }
+        }
+    }
+
+    .s3-B {
+        background-color: $blueBurple;
+        border-radius: 10px;
+        display: flex;
+
+        .s3-BContent {
+            display: flex;
+
+            .s3-BHead {
+                color: $white;
+                font-size: 40px;
+                font-weight: 700;
+            }
+
+            .s3-BPargraph {
+                color: $smothGrey;
+                font-size: 20.5px;
+                line-height: 27px;
+            }
+
+            .s3-BButton {
+                @include buttons();
+                color: $blueBurple;
+                background-color: $white;
+            }
+        }
+
+        .s3-BImage {
+            background: url('../assets/PageImage.png') no-repeat center;
+            background-size: cover;
+            border-radius: 8px;
+            height: 400px;
+        }
+    }
+
+    .s3-C {
+        display: flex;
+
+        .clientCard {
+            border-radius: 5px;
+            border: 1px solid $smothGrey;
+            display: flex;
+
+            .cardHeader {
+                display: flex;
+
+                .cHTitle {
+                    font-weight: 600;
+                    color: $blueBurple;
+                }
+
+                .cHTitle2 {
+                    padding-top: 1px;
+                    color: $smothBlack;
+                }
+            }
+
+            .cardPargraph {
+                font-size: 19px;
+                line-height: 28px;
+            }
+
+            .cardButton {
+                @include buttons();
+                background-color: $white;
+                border: 1px solid $smothGrey;
+                color: $blueBurple;
+            }
+        }
+    }
+}
+
+footer {
+    .fHead, .linksHead {
+        @include Logo();
+    }
+
+    .fPargraph, .fMade, .link {
+        @include Paragraphs();
+        text-decoration: none;
+    }
+
+    .fLinks {
+        display: flex;
+
+        .fLinks-pack {
+            display: flex;
+        }
+    }
+
+    .link {
+        cursor: pointer;
+    }
+}
+
+@keyframes backInRight {
+    0% {
+      transform: translateX(89px) scale(0.7);
+      opacity: 0.5;
+    }
+
+    80% {
+      transform: translateX(0px) scale(0.7);
+      opacity: 0.7;
+    }
+
+    100% {
+      transform: scale(1);
+      opacity: 1;
+    }
+}
+
+@keyframes backOutLeft {
+    0% {
+      transform: scale(1);
+      opacity: 1;
+    }
+
+    20% {
+      transform: translateX(0px) scale(0.7);
+      opacity: 0.7;
+    }
+
+    100% {
+      transform: translateX(-2000px) scale(0.7);
+      opacity: 0.7;
+    }
+}

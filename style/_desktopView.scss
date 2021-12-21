@@ -1,0 +1,174 @@
+@media (min-width: 1300px) and (max-width: 2560px){
+    .topNav {
+
+        .logo {
+            font-size: 27px;
+        }
+
+        .navLinks {
+
+            .navLinks-1, .navLinks-2 {
+
+                a {
+                    font-size: 20px;
+                    margin: 10px;
+                }
+            }
+
+            .navLinks-1 {
+                margin-right: 250px;
+
+            }
+        }
+    }
+
+    .section-2 {
+        // padding: 20px 180px;
+
+        .s2Content {
+
+            .rates {
+                .rPargraph {
+                    font-size: 20px;
+                }
+            }
+
+            .s2Head {
+                font-size: 60px;
+            }
+
+            .s2Pargraph {
+                font-size: 19px;
+            }
+
+            .s2Content2 {
+
+                .s2Button {
+                    font-size: 19px;
+                    padding: 20px 30px;
+                }
+
+                .s2Examples {
+                    font-size: 20px;
+                    padding-left: 30px;
+                }
+            }
+
+            .s2List {
+                padding-right: 10px;
+
+                .checkMark {
+                    font-size: 20px;
+                    padding: 2px 20px 10px 30px;
+                }
+            }
+        }
+    }
+
+    .section-3 {
+        height: 1350px;
+
+        .s3Title {
+            font-size: 20px;
+        }
+
+        .s3Head {
+            margin-top: 20px;
+            font-size: 43px;
+            padding-right: 550px;
+        }
+
+        .fetures {
+
+            .s3Fetures {
+
+                .fTitle {
+                    font-size: 18px;
+                }
+
+                .fPargraph {
+                    font-size: 19px;
+                }
+            }
+        }
+
+        .s3-B {
+            margin-top: 70px;
+
+            .s3-BContent {
+                height: 200px;
+
+                .s3-BHead {
+                    font-size: 38px;
+                }
+
+                .s3-BPargraph {
+                    font-size: 19px;
+                    line-height: 25px;
+                }
+
+                .s3-BButton {
+                    font-size: 18px;
+                    padding: 23px;
+                }
+            }
+        }
+
+        .s3-C {
+            padding-top: 70px;
+
+            .clientCard {
+                min-width: 35%;
+                height: 300px;
+
+                .cardHeader {
+
+                    .cHImage {
+                        width: 53px;
+                    }
+                }
+
+                .cardPargraph {
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+
+    footer {
+
+        .fContent {
+            width: 33%;
+
+            .fHead {
+                font-size: 22px;
+            }
+
+            .fPargraph, .fMade {
+                font-size: 18px;
+            }
+
+            .fMade {
+                padding-top: 20px;
+            }
+        }
+
+        .fLinks {
+            width: 60%;
+
+            .fLinks-pack {
+
+                .linksHead {
+                    font-size: 22px;
+                }
+
+                a {
+                    font-size: 18px;
+                    padding-bottom: 10px;
+                }
+            }
+        }
+    }
+
+
+}

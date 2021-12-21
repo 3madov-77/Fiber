@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/style.css">
+    <!-- <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  /> -->
+    <title>Fiber</title>
+</head>
+<body>
+    <div class="topNav">
+        <div class="logoContainer">
+            <h1 class="logo">Fiber</h1>
+        </div>
+        <div class="navLinks">
+            <div class="navLinks-1">
+                <a href="#">Community</a>
+                <a href="#">Pricing</a>
+                <a href="#">Features</a>
+            </div>
+            <div class="lineBreak"></div>
+            <div class="navLinks-2">
+                <a href="#">Sign In</a>
+                <a href="#">Sign Up</a>
+            </div>
+        </div>
+
+        <div class="hMenuContainer" onclick="showLinks()">
+            <img src="./assets/Hamburger Menu.svg" alt="" class="hMenu" >
+        </div>
+    </div>
+
+    <div class="section-2">
+        <img src="./assets/hero-Illustration.png" alt="" class="s2Hero">
+        <div class="s2Content" >
+            <div class="rates">
+                <div class="stars">
+                    <img src="./assets/star.svg" alt="">
+                    <img src="./assets/star.svg" alt="">
+                    <img src="./assets/star.svg" alt="">
+                    <img src="./assets/star.svg" alt="">
+                    <img src="./assets/star.svg" alt="">
+                </div>
+                <p class="rPargraph">Rated 4.8/5 (243 reviews)</p>
+            </div>
+            <h1 class="s2Head">Create your portfolio in minutes.</h1>
+            <p class="s2Pargraph">With Fiber, you can setup your own personal portfolio in minutes with dozens of premade, beautiful templates.</p>
+            <div class="s2Content2">
+                <button class="s2Button">Start Free Trial</button>
+                <a href="#" class="s2Examples">View Examples</a>
+            </div>
+            <ul class="s2List">
+                <li class="checkMark">No Credit Card Requierd</li>
+                <li class="checkMark">10 Free Templates</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="section-3">
+        <h4 class="s3Title">Why Fiber?</h4>
+        <h1 class="s3Head">A good portfolio means good employability.</h1>
+        
+        <div class="fetures">
+            <div class="s3Fetures">
+                <img src="./assets/time.svg" alt="" class="fLogo">
+                <h4 class="fTitle">Build in minutes</h4>
+                <p class="fPargraph">With a selection of premade templates, you can build out a portfolio in less than 10 minutes.</p>
+            </div>
+            
+            <div class="s3Fetures">
+                <img src="./assets/code.svg" alt="" class="fLogo">
+                <h4 class="fTitle">Add custom CSS</h4>
+                <p class="fPargraph">Customaize your personal portfolio even more with the ability to add your own custom CSS styles.</p>
+            </div>
+    
+            <div class="s3Fetures">
+                <img src="./assets/allSizes.svg" alt="" class="fLogo">
+                <h4 class="fTitle">Responsive</h4>
+                <p class="fPargraph">All Fiber templates are fully responsive to ensure the experience is seemless across all devices.</p>
+            </div>
+        </div>
+
+        <div class="s3-B">
+            <div class="s3-BContent">
+                <h1 class="s3-BHead">Diversify your portfolio.</h1>
+                <p class="s3-BPargraph">Create an even more impressive portfolio by createing case studeies for your projects. Simply follow our step-by-step guide.</p>
+                <button class="s3-BButton">Start Free Trial</button>
+            </div>
+            <div class="s3-BImage"></div>
+        </div>
+
+        <div class="s3-C" id="allCards">
+
+            <div class="clientCard">
+                <div class="cardHeader">
+                    <img src="./assets/User Avatar.svg" alt="" class="cHImage">
+                    <div>
+                        <h4 class="cHTitle">Sarah Andrews</h4>
+                        <h4 class="cHTitle2">$100k in revenue</h4>
+                    </div>
+                </div>
+                <p class="cardPargraph">Setting up my portfolio with Fiber took no more than 10 minutes. Since then, my portfolio has attracted a lot of clients and made me more than $100k.</p>
+                <button class="cardButton">View Sarah's Portfolio</button>
+            </div>
+
+            <div class="clientCard">
+                <div class="cardHeader">
+                    <img src="./assets/User Avatar 2.svg" alt="" class="cHImage">
+                    <div>
+                        <h4 class="cHTitle">Mathew Higgins</h4>
+                        <h4 class="cHTitle2">$20k in revenue</h4>
+                    </div>
+                </div>
+                <p class="cardPargraph">I have been getting A LOT of leads ever since i used Fiber's premade templates, now i just need to work on my case studies and i'll be ready to go!</p>
+                <button class="cardButton">View Mathew's Portfolio</button>
+            </div>
+            
+            <div class="clientCard">
+                <div class="cardHeader">
+                    <img src="./assets/User Avatar 32.svg" alt="" class="cHImage">
+                    <div>
+                        <h4 class="cHTitle">Janice Dave</h4>
+                        <h4 class="cHTitle2">$30k in revenue</h4>
+                    </div>
+                </div>
+                <p class="cardPargraph">I only just started freelancing this year and i have already made more than i ever made in my full.time job. The templates are just so amazing.</p>
+                <button class="cardButton">View Janice's Portfolio</button>
+            </div>
+            <div class="clientCard">
+                <div class="cardHeader">
+                    <img src="./assets/User Avatar 32.svg" alt="" class="cHImage">
+                    <div>
+                        <h4 class="cHTitle">Janice Dave1</h4>
+                        <h4 class="cHTitle2">$30k in revenue</h4>
+                    </div>
+                </div>
+                <p class="cardPargraph">I only just started freelancing this year and i have already made more than i ever made in my full.time job. The templates are just so amazing.</p>
+                <button class="cardButton">View Janice's Portfolio</button>
+            </div>
+            <div class="clientCard">
+                <div class="cardHeader">
+                    <img src="./assets/User Avatar 32.svg" alt="" class="cHImage">
+                    <div>
+                        <h4 class="cHTitle">Janice Dave2</h4>
+                        <h4 class="cHTitle2">$30k in revenue</h4>
+                    </div>
+                </div>
+                <p class="cardPargraph">I only just started freelancing this year and i have already made more than i ever made in my full.time job. The templates are just so amazing.</p>
+                <button class="cardButton">View Janice's Portfolio</button>
+            </div>
+
+            <!--fake cards..-->
+
+            <div class="clientCard">
+                <div class="cardHeader">
+                    <img src="./assets/User Avatar 32.svg" alt="" class="cHImage">
+                    <div>
+                        <h4 class="cHTitle">Janice Dave2</h4>
+                        <h4 class="cHTitle2">$30k in revenue</h4>
+                    </div>
+                </div>
+                <p class="cardPargraph">I only just started freelancing this year and i have already made more than i ever made in my full.time job. The templates are just so amazing.</p>
+                <button class="cardButton">View Janice's Portfolio</button>
+            </div><div class="clientCard">
+                <div class="cardHeader">
+                    <img src="./assets/User Avatar 32.svg" alt="" class="cHImage">
+                    <div>
+                        <h4 class="cHTitle">Janice Dave2</h4>
+                        <h4 class="cHTitle2">$30k in revenue</h4>
+                    </div>
+                </div>
+                <p class="cardPargraph">I only just started freelancing this year and i have already made more than i ever made in my full.time job. The templates are just so amazing.</p>
+                <button class="cardButton">View Janice's Portfolio</button>
+            </div><div class="clientCard">
+                <div class="cardHeader">
+                    <img src="./assets/User Avatar 32.svg" alt="" class="cHImage">
+                    <div>
+                        <h4 class="cHTitle">Janice Dave2</h4>
+                        <h4 class="cHTitle2">$30k in revenue</h4>
+                    </div>
+                </div>
+                <p class="cardPargraph">I only just started freelancing this year and i have already made more than i ever made in my full.time job. The templates are just so amazing.</p>
+                <button class="cardButton">View Janice's Portfolio</button>
+            </div><div class="clientCard">
+                <div class="cardHeader">
+                    <img src="./assets/User Avatar 32.svg" alt="" class="cHImage">
+                    <div>
+                        <h4 class="cHTitle">Janice Dave2</h4>
+                        <h4 class="cHTitle2">$30k in revenue</h4>
+                    </div>
+                </div>
+                <p class="cardPargraph">I only just started freelancing this year and i have already made more than i ever made in my full.time job. The templates are just so amazing.</p>
+                <button class="cardButton">View Janice's Portfolio</button>
+            </div><div class="clientCard">
+                <div class="cardHeader">
+                    <img src="./assets/User Avatar 32.svg" alt="" class="cHImage">
+                    <div>
+                        <h4 class="cHTitle">Janice Dave2</h4>
+                        <h4 class="cHTitle2">$30k in revenue</h4>
+                    </div>
+                </div>
+                <p class="cardPargraph">I only just started freelancing this year and i have already made more than i ever made in my full.time job. The templates are just so amazing.</p>
+                <button class="cardButton">View Janice's Portfolio</button>
+            </div><div class="clientCard">
+                <div class="cardHeader">
+                    <img src="./assets/User Avatar 32.svg" alt="" class="cHImage">
+                    <div>
+                        <h4 class="cHTitle">Janice Dave2</h4>
+                        <h4 class="cHTitle2">$30k in revenue</h4>
+                    </div>
+                </div>
+                <p class="cardPargraph">I only just started freelancing this year and i have already made more than i ever made in my full.time job. The templates are just so amazing.</p>
+                <button class="cardButton">View Janice's Portfolio</button>
+            </div><div class="clientCard">
+                <div class="cardHeader">
+                    <img src="./assets/User Avatar 32.svg" alt="" class="cHImage">
+                    <div>
+                        <h4 class="cHTitle">Janice Dave2</h4>
+                        <h4 class="cHTitle2">$30k in revenue</h4>
+                    </div>
+                </div>
+                <p class="cardPargraph">I only just started freelancing this year and i have already made more than i ever made in my full.time job. The templates are just so amazing.</p>
+                <button class="cardButton">View Janice's Portfolio</button>
+            </div><div class="clientCard">
+                <div class="cardHeader">
+                    <img src="./assets/User Avatar 32.svg" alt="" class="cHImage">
+                    <div>
+                        <h4 class="cHTitle">Janice Dave2</h4>
+                        <h4 class="cHTitle2">$30k in revenue</h4>
+                    </div>
+                </div>
+                <p class="cardPargraph">I only just started freelancing this year and i have already made more than i ever made in my full.time job. The templates are just so amazing.</p>
+                <button class="cardButton">View Janice's Portfolio</button>
+            </div><div class="clientCard">
+                <div class="cardHeader">
+                    <img src="./assets/User Avatar 32.svg" alt="" class="cHImage">
+                    <div>
+                        <h4 class="cHTitle">Janice Dave2</h4>
+                        <h4 class="cHTitle2">$30k in revenue</h4>
+                    </div>
+                </div>
+                <p class="cardPargraph">I only just started freelancing this year and i have already made more than i ever made in my full.time job. The templates are just so amazing.</p>
+                <button class="cardButton">View Janice's Portfolio</button>
+            </div><div class="clientCard">
+                <div class="cardHeader">
+                    <img src="./assets/User Avatar 32.svg" alt="" class="cHImage">
+                    <div>
+                        <h4 class="cHTitle">Janice Dave2</h4>
+                        <h4 class="cHTitle2">$30k in revenue</h4>
+                    </div>
+                </div>
+                <p class="cardPargraph">I only just started freelancing this year and i have already made more than i ever made in my full.time job. The templates are just so amazing.</p>
+                <button class="cardButton">View Janice's Portfolio</button>
+            </div><div class="clientCard">
+                <div class="cardHeader">
+                    <img src="./assets/User Avatar 32.svg" alt="" class="cHImage">
+                    <div>
+                        <h4 class="cHTitle">Janice Dave2</h4>
+                        <h4 class="cHTitle2">$30k in revenue</h4>
+                    </div>
+                </div>
+                <p class="cardPargraph">I only just started freelancing this year and i have already made more than i ever made in my full.time job. The templates are just so amazing.</p>
+                <button class="cardButton">View Janice's Portfolio</button>
+            </div><div class="clientCard">
+                <div class="cardHeader">
+                    <img src="./assets/User Avatar 32.svg" alt="" class="cHImage">
+                    <div>
+                        <h4 class="cHTitle">Janice Dave2</h4>
+                        <h4 class="cHTitle2">$30k in revenue</h4>
+                    </div>
+                </div>
+                <p class="cardPargraph">I only just started freelancing this year and i have already made more than i ever made in my full.time job. The templates are just so amazing.</p>
+                <button class="cardButton">View Janice's Portfolio</button>
+            </div><div class="clientCard">
+                <div class="cardHeader">
+                    <img src="./assets/User Avatar 32.svg" alt="" class="cHImage">
+                    <div>
+                        <h4 class="cHTitle">Janice Dave2</h4>
+                        <h4 class="cHTitle2">$30k in revenue</h4>
+                    </div>
+                </div>
+                <p class="cardPargraph">I only just started freelancing this year and i have already made more than i ever made in my full.time job. The templates are just so amazing.</p>
+                <button class="cardButton">View Janice's Portfolio</button>
+            </div><div class="clientCard">
+                <div class="cardHeader">
+                    <img src="./assets/User Avatar 32.svg" alt="" class="cHImage">
+                    <div>
+                        <h4 class="cHTitle">Janice Dave2</h4>
+                        <h4 class="cHTitle2">$30k in revenue</h4>
+                    </div>
+                </div>
+                <p class="cardPargraph">I only just started freelancing this year and i have already made more than i ever made in my full.time job. The templates are just so amazing.</p>
+                <button class="cardButton">View Janice's Portfolio</button>
+            </div><div class="clientCard">
+                <div class="cardHeader">
+                    <img src="./assets/User Avatar 32.svg" alt="" class="cHImage">
+                    <div>
+                        <h4 class="cHTitle">Janice Dave2</h4>
+                        <h4 class="cHTitle2">$30k in revenue</h4>
+                    </div>
+                </div>
+                <p class="cardPargraph">I only just started freelancing this year and i have already made more than i ever made in my full.time job. The templates are just so amazing.</p>
+                <button class="cardButton">View Janice's Portfolio</button>
+            </div>
+
+            <!--back to realtiy..-->
+                
+        </div>
+        <div class="arows">
+            <span class="arow" onclick="goLeft()">←</span>
+            <span class="arow" onclick="goRight()">→</span>
+        </div>
+
+        <div class="dots">
+            <!-- <span class="bulit">○</span> -->
+        </div>
+    
+    </div>
+
+    <footer>
+        <div class="fContent">
+            <h1 class="fHead">Fiber</h1>
+            <p class="fPargraph">With Fiber, you can setup your own personal portfolio in minutes withdozens of premade, beautiful templates.</p>
+            <h4 class="fMade">Made with ♥ in Jordan</h4>
+        </div>
+
+        <div class="fLinks">
+            <div class="fLinks-pack">
+                <h1 class="linksHead">Sitemap</h1>
+                <a href="#" class="link">Homepage</a>
+                <a href="#" class="link">Pricing</a>
+                <a href="#" class="link">Testimonials</a>
+                <a href="#" class="link">Features</a>
+            </div>
+
+            <div class="fLinks-pack">
+                <h1 class="linksHead">Resources</h1>
+                <a href="#" class="link">Support</a>
+                <a href="#" class="link">Contact</a>
+                <a href="#" class="link">FAQ</a>
+            </div>
+
+            <div class="fLinks-pack">
+                <h1 class="linksHead">Company</h1>
+                <a href="#" class="link">About</a>
+                <a href="#" class="link">Customers</a>
+                <a href="#" class="link">Blog</a>
+            </div>
+
+            <div class="fLinks-pack">
+                <h1 class="linksHead">Portfolios</h1>
+                <a href="#" class="link">Sarah Andrews</a>
+                <a href="#" class="link">Mathew Higgins</a>
+                <a href="#" class="link">Janice Dave</a>
+            </div>
+        </div>
+
+    </footer>
+
+    <script src="./script.js"></script>
+</body>
+</html>

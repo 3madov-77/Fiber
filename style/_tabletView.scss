@@ -1,0 +1,74 @@
+@media (min-width: 426px) and (max-width: 768px) {
+    body {
+        padding: 55px 0;
+    }
+
+    .topNav {
+        padding: 0 55px;
+        .logo {
+            font-size: 40px;
+        }
+
+        .hMenu {
+            width: 40px;
+        }
+
+        .navLinks {
+            // display: none;
+            top: 100px
+        }
+    }
+
+    .section-3 {
+        padding: 50px 0;
+
+        .s3Title {
+            padding: 20px 55px;
+        }
+
+        .s3Head {
+            padding: 20px 55px;
+        }
+
+        .fetures {
+            padding: 0 55px;
+
+            .s3Fetures {
+                height: 220px;
+
+                .fLogo {
+                    width: 50px;
+                }
+            }
+        }
+
+        .s3-B {
+            text-align: center;
+            justify-content: center;
+            margin: 0 55px;
+
+            .s3-BImage {
+                background-position: center;
+                background-size: cover;
+                margin: 0 auto;
+                width: 100%;
+            }
+        }
+
+        .s3-C {
+            padding: 0 55px;
+        }
+    }
+
+    footer {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding: 70px 55px 0 55px;
+
+        .fHead {
+            font-size: 40px;
+        }
+    }
+}

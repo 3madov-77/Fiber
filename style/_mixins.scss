@@ -1,0 +1,23 @@
+@import "_variables";
+
+@mixin buttons {
+    background-color: $blueBurple;
+    border-radius: 5px;
+    border: hidden;
+    color: $white;
+    font-size: 19px;
+    font-weight: 600;
+    margin: 15px 0;
+    padding: 20px;
+}
+
+@mixin Logo {
+    font-weight: 600;
+    font-size: 22px;
+}
+
+@mixin Paragraphs {
+    color: $darkGery;
+    font-size: 20px;
+    line-height: 28px;
+}

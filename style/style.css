@@ -1,0 +1,1248 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600;700;800;900&display=swap");
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body {
+  background-color: #FFF9EF;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-family: 'Roboto';
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  overflow-x: hidden;
+}
+
+.topNav {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.topNav .logo {
+  font-weight: 600;
+  font-size: 22px;
+}
+
+.topNav .hMenuContainer {
+  position: relative;
+  z-index: 1;
+}
+
+.topNav .navLinks-1, .topNav .navLinks-2 {
+  display: none;
+}
+
+.topNav .navLinks-1 a, .topNav .navLinks-2 a {
+  text-decoration: none;
+  color: #4B4B4B;
+  font-size: 18px;
+}
+
+.topNav .navLinks-2 a {
+  font-weight: 900;
+}
+
+.topNav .navLinks-2 :nth-child(2) {
+  border-radius: 10px;
+  color: #FFFFFF;
+  background-color: #451EC5;
+}
+
+.section-2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.section-2 .s2Hero {
+  position: relative;
+  z-index: 0;
+}
+
+.section-2 .s2Pargraph {
+  color: #4B4B4B;
+  font-size: 20px;
+  line-height: 28px;
+}
+
+.section-2 .s2Content .s2Content2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.section-2 .s2Content .s2Button {
+  background-color: #451EC5;
+  border-radius: 5px;
+  border: hidden;
+  color: #FFFFFF;
+  font-size: 19px;
+  font-weight: 600;
+  margin: 15px 0;
+  padding: 20px;
+}
+
+.section-2 .s2Content .s2Examples {
+  font-size: 20px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.section-2 .s2Content .s2List {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.section-2 .s2Content .s2List .checkMark {
+  background-image: url("../assets/Checkmark.svg");
+  background-repeat: no-repeat;
+  color: #4B4B4B;
+  font-size: 18px;
+}
+
+.section-3 {
+  background-color: #FFFFFF;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+}
+
+.section-3 .s3Title {
+  letter-spacing: 0.3px;
+  font-weight: 700;
+  font-size: 18px;
+  color: #451EC5;
+}
+
+.section-3 .fetures {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.section-3 .fetures .s3Fetures {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.section-3 .fetures .s3Fetures .fPargraph {
+  color: #4B4B4B;
+  font-size: 20px;
+  line-height: 28px;
+  opacity: 0.8;
+}
+
+.section-3 .s3-B {
+  background-color: #451EC5;
+  border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.section-3 .s3-B .s3-BContent {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.section-3 .s3-B .s3-BContent .s3-BHead {
+  color: #FFFFFF;
+  font-size: 40px;
+  font-weight: 700;
+}
+
+.section-3 .s3-B .s3-BContent .s3-BPargraph {
+  color: #bdbdbd;
+  font-size: 20.5px;
+  line-height: 27px;
+}
+
+.section-3 .s3-B .s3-BContent .s3-BButton {
+  background-color: #451EC5;
+  border-radius: 5px;
+  border: hidden;
+  color: #FFFFFF;
+  font-size: 19px;
+  font-weight: 600;
+  margin: 15px 0;
+  padding: 20px;
+  color: #451EC5;
+  background-color: #FFFFFF;
+}
+
+.section-3 .s3-B .s3-BImage {
+  background: url("../assets/PageImage.png") no-repeat center;
+  background-size: cover;
+  border-radius: 8px;
+  height: 400px;
+}
+
+.section-3 .s3-C {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.section-3 .s3-C .clientCard {
+  border-radius: 5px;
+  border: 1px solid #bdbdbd;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.section-3 .s3-C .clientCard .cardHeader {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.section-3 .s3-C .clientCard .cardHeader .cHTitle {
+  font-weight: 600;
+  color: #451EC5;
+}
+
+.section-3 .s3-C .clientCard .cardHeader .cHTitle2 {
+  padding-top: 1px;
+  color: #2A2A2A;
+}
+
+.section-3 .s3-C .clientCard .cardPargraph {
+  font-size: 19px;
+  line-height: 28px;
+}
+
+.section-3 .s3-C .clientCard .cardButton {
+  background-color: #451EC5;
+  border-radius: 5px;
+  border: hidden;
+  color: #FFFFFF;
+  font-size: 19px;
+  font-weight: 600;
+  margin: 15px 0;
+  padding: 20px;
+  background-color: #FFFFFF;
+  border: 1px solid #bdbdbd;
+  color: #451EC5;
+}
+
+footer .fHead, footer .linksHead {
+  font-weight: 600;
+  font-size: 22px;
+}
+
+footer .fPargraph, footer .fMade, footer .link {
+  color: #4B4B4B;
+  font-size: 20px;
+  line-height: 28px;
+  text-decoration: none;
+}
+
+footer .fLinks {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+footer .fLinks .fLinks-pack {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+footer .link {
+  cursor: pointer;
+}
+
+@-webkit-keyframes backInRight {
+  0% {
+    -webkit-transform: translateX(89px) scale(0.7);
+            transform: translateX(89px) scale(0.7);
+    opacity: 0.5;
+  }
+  80% {
+    -webkit-transform: translateX(0px) scale(0.7);
+            transform: translateX(0px) scale(0.7);
+    opacity: 0.7;
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes backInRight {
+  0% {
+    -webkit-transform: translateX(89px) scale(0.7);
+            transform: translateX(89px) scale(0.7);
+    opacity: 0.5;
+  }
+  80% {
+    -webkit-transform: translateX(0px) scale(0.7);
+            transform: translateX(0px) scale(0.7);
+    opacity: 0.7;
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes backOutLeft {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 1;
+  }
+  20% {
+    -webkit-transform: translateX(0px) scale(0.7);
+            transform: translateX(0px) scale(0.7);
+    opacity: 0.7;
+  }
+  100% {
+    -webkit-transform: translateX(-2000px) scale(0.7);
+            transform: translateX(-2000px) scale(0.7);
+    opacity: 0.7;
+  }
+}
+
+@keyframes backOutLeft {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 1;
+  }
+  20% {
+    -webkit-transform: translateX(0px) scale(0.7);
+            transform: translateX(0px) scale(0.7);
+    opacity: 0.7;
+  }
+  100% {
+    -webkit-transform: translateX(-2000px) scale(0.7);
+            transform: translateX(-2000px) scale(0.7);
+    opacity: 0.7;
+  }
+}
+
+@media (max-width: 768px) {
+  body {
+    padding: 35px 0px;
+  }
+  .topNav {
+    padding: 0 35px;
+  }
+  .topNav .animatIn {
+    -webkit-animation: backInRight 0.5s;
+            animation: backInRight 0.5s;
+  }
+  .topNav .animatOut {
+    -webkit-animation: backOutLeft 0.5s;
+            animation: backOutLeft 0.5s;
+  }
+  .topNav .navLinks {
+    display: none;
+    background-color: #451EC5;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    position: absolute;
+    top: 60px;
+    left: 11%;
+    width: 80%;
+    height: 350px;
+    border-radius: 40px;
+    z-index: 100;
+  }
+  .topNav .navLinks .navLinks-1, .topNav .navLinks .navLinks-2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+  }
+  .topNav .navLinks .navLinks-1 a, .topNav .navLinks .navLinks-2 a {
+    padding: 17px;
+    color: #FFFFFF;
+    font-size: 135%;
+    background: none;
+    font-weight: 600;
+    width: 50%;
+    border-radius: 50px;
+    margin: 0 auto;
+  }
+  .topNav .navLinks .navLinks-1 a:hover, .topNav .navLinks .navLinks-2 a:hover {
+    background-color: #2A2A2A;
+  }
+  .topNav .navLinks .navLinks-1 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+  .topNav .navLinks .lineBreak {
+    border-top: 1px solid grey;
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 10px;
+  }
+  .section-2 {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 0 35px;
+  }
+  .section-2 .s2Hero {
+    margin: -20px 0 20px 0;
+  }
+  .section-2 .s2Head {
+    line-height: 45px;
+    font-weight: 600;
+    font-size: 40px;
+  }
+  .section-2 .s2Pargraph {
+    color: #4B4B4B;
+    font-size: 20px;
+    line-height: 28px;
+    margin-top: 10px;
+  }
+  .section-2 .s2Content .rates {
+    display: none;
+  }
+  .section-2 .s2Content .s2Content2 {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .section-2 .s2Content .s2Content2 .s2Examples {
+    margin: 5px 0 14px 0;
+  }
+  .section-2 .s2Content .s2List {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .section-2 .s2Content .s2List .checkMark {
+    margin: 5px 0;
+    padding: 4px 30px;
+  }
+  .section-3 {
+    margin-top: 40px;
+    padding: 50px 0px;
+  }
+  .section-3 .s3Title {
+    padding: 20px 35px;
+  }
+  .section-3 .s3Head {
+    padding: 0 35px 20px 35px;
+    font-weight: 700;
+    font-size: 40px;
+  }
+  .section-3 .fetures {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 0 35px;
+  }
+  .section-3 .fetures .s3Fetures {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 180px;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    padding: 10px 0;
+  }
+  .section-3 .fetures .s3Fetures .fLogo {
+    width: 42px;
+  }
+  .section-3 .fetures .s3Fetures .fTitle {
+    font-weight: 600;
+    font-size: 17px;
+  }
+  .section-3 .s3-B {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 60px 35px 0 35px;
+    padding: 55px 35px 0 35px;
+  }
+  .section-3 .s3-B .s3-BContent {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .section-3 .s3-B .s3-BPargraph {
+    padding: 10px 0px;
+  }
+  .section-3 .s3-B .s3-BButton {
+    width: 100%;
+  }
+  .section-3 .s3-C {
+    margin-top: 40px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 0 35px;
+    height: 1000px;
+    overflow-x: hidden;
+  }
+  .section-3 .s3-C .clientCard {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-top: 40px;
+    padding: 20px;
+  }
+  .section-3 .s3-C .clientCard .cardHeader {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .section-3 .s3-C .clientCard .cardHeader .cHImage {
+    margin-right: 15px;
+    width: 45px;
+  }
+  .section-3 .s3-C .clientCard .cardHeader :nth-child(2) {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .section-3 .s3-C .clientCard .cardPargraph {
+    padding: 15px 28px 15px 0px;
+  }
+  .section-3 .s3-C .clientCard .cardButton {
+    margin-bottom: 0;
+  }
+  footer {
+    padding: 60px 35px 0 35px;
+  }
+  footer .fContent .fPargraph, footer .fContent .fMade {
+    padding-top: 17px;
+  }
+  footer .fPargraph, footer .fMade, footer .link {
+    padding-top: 17px;
+  }
+  footer .fLinks {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  footer .fLinks .fLinks-pack {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  footer .linksHead {
+    margin-top: 50px;
+  }
+  .arows, .bulit {
+    display: none;
+  }
+}
+
+@media (min-width: 426px) and (max-width: 768px) {
+  body {
+    padding: 55px 0;
+  }
+  .topNav {
+    padding: 0 55px;
+  }
+  .topNav .logo {
+    font-size: 40px;
+  }
+  .topNav .hMenu {
+    width: 40px;
+  }
+  .topNav .navLinks {
+    top: 100px;
+  }
+  .section-3 {
+    padding: 50px 0;
+  }
+  .section-3 .s3Title {
+    padding: 20px 55px;
+  }
+  .section-3 .s3Head {
+    padding: 20px 55px;
+  }
+  .section-3 .fetures {
+    padding: 0 55px;
+  }
+  .section-3 .fetures .s3Fetures {
+    height: 220px;
+  }
+  .section-3 .fetures .s3Fetures .fLogo {
+    width: 50px;
+  }
+  .section-3 .s3-B {
+    text-align: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 0 55px;
+  }
+  .section-3 .s3-B .s3-BImage {
+    background-position: center;
+    background-size: cover;
+    margin: 0 auto;
+    width: 100%;
+  }
+  .section-3 .s3-C {
+    padding: 0 55px;
+  }
+  footer {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+    padding: 70px 55px 0 55px;
+  }
+  footer .fHead {
+    font-size: 40px;
+  }
+}
+
+@media (min-width: 769px) {
+  .topNav {
+    padding: 0 100px;
+  }
+  .topNav .logo {
+    padding-top: 50px;
+    font-weight: 900;
+    font-size: 22px;
+    margin-right: 200px;
+  }
+  .topNav .hMenuContainer {
+    display: none;
+  }
+  .topNav .navLinks {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    position: static;
+  }
+  .topNav .navLinks .navLinks-1 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding-top: 50px;
+    margin-right: 50px;
+  }
+  .topNav .navLinks .navLinks-1 a {
+    padding-left: 20px;
+  }
+  .topNav .navLinks .navLinks-2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding-top: 30px;
+  }
+  .topNav .navLinks .navLinks-2 a {
+    padding: 20px 30px;
+  }
+  .section-2 {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding-bottom: 60px;
+    padding: 50px 100px 100px 100px;
+  }
+  .section-2 .s2Hero {
+    -webkit-box-ordinal-group: 8;
+        -ms-flex-order: 7;
+            order: 7;
+    width: 50%;
+  }
+  .section-2 .s2Content {
+    -ms-flex-item-align: center;
+        align-self: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 350px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-top: 100px;
+  }
+  .section-2 .s2Content .rates {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .section-2 .s2Content .rates .stars {
+    margin-right: 20px;
+  }
+  .section-2 .s2Content .rates .rPargraph {
+    font-size: 18px;
+  }
+  .section-2 .s2Content .s2Head {
+    font-size: 43px;
+    font-weight: 900;
+    line-height: 50px;
+  }
+  .section-2 .s2Content .s2Pargraph {
+    font-weight: 300;
+    font-size: 14px;
+  }
+  .section-2 .s2Content .s2Content2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .section-2 .s2Content .s2Content2 .s2Button {
+    font-size: 17px;
+    padding: 15px 25px;
+  }
+  .section-2 .s2Content .s2Content2 .s2Examples {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    font-size: 17px;
+    padding-left: 25px;
+  }
+  .section-2 .s2Content .s2List {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .section-2 .s2Content .s2List .checkMark {
+    font-size: 14px;
+    padding: 5px 20px 10px 30px;
+  }
+  .section-3 {
+    height: 1300px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 0 100px;
+    padding: 100px 0px;
+  }
+  .section-3 .s3Title {
+    font-size: 15px;
+    padding: 0 100px;
+  }
+  .section-3 .s3Head {
+    font-size: 35px;
+    font-weight: 700;
+    padding-right: 250px;
+    padding: 0 100px;
+  }
+  .section-3 .fetures {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-top: 40px;
+    padding: 0 100px;
+  }
+  .section-3 .fetures .s3Fetures {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 140px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 32%;
+  }
+  .section-3 .fetures .s3Fetures .fTitle {
+    font-weight: 700;
+    font-size: 14px;
+  }
+  .section-3 .fetures .s3Fetures .fLogo {
+    width: 40px;
+  }
+  .section-3 .fetures .s3Fetures .fPargraph {
+    line-height: 24px;
+    font-size: 14px;
+  }
+  .section-3 .s3-B {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin: 0px 100px;
+    padding: 30px 30px 0 30px;
+  }
+  .section-3 .s3-B .s3-BContent {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    text-align: left;
+    width: 40%;
+  }
+  .section-3 .s3-B .s3-BContent .s3-BHead {
+    font-size: 28px;
+  }
+  .section-3 .s3-B .s3-BContent .s3-BPargraph {
+    line-height: 20px;
+    font-size: 15px;
+  }
+  .section-3 .s3-B .s3-BContent .s3-BButton {
+    background-color: #451EC5;
+    border-radius: 5px;
+    border: hidden;
+    color: #FFFFFF;
+    font-size: 19px;
+    font-weight: 600;
+    margin: 15px 0;
+    padding: 20px;
+    background-color: #FFFFFF;
+    color: #451EC5;
+    font-size: 15px;
+    padding: 17px;
+  }
+  .section-3 .s3-B .s3-BImage {
+    background-size: cover;
+    border-radius: 10px;
+    width: 55%;
+  }
+  .section-3 .s3-C {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    overflow-y: hidden;
+    padding: 0 100px;
+  }
+  .section-3 .s3-C .clientCard {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-right: 30px;
+    min-width: 38%;
+    padding: 20px;
+  }
+  .section-3 .s3-C .clientCard .cardHeader {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .section-3 .s3-C .clientCard .cardHeader .cHImage {
+    margin-right: 15px;
+    width: 45px;
+  }
+  .section-3 .s3-C .clientCard .cardHeader :nth-child(2) {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .section-3 .s3-C .clientCard .cardPargraph {
+    font-size: 17px;
+  }
+  .section-3 .s3-C::-webkit-scrollbar {
+    display: none;
+  }
+  footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 50px 100px 0 100px;
+  }
+  footer .fContent {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 150px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 37%;
+  }
+  footer .fContent .fHead {
+    font-size: 17px;
+  }
+  footer .fContent .fPargraph, footer .fContent .fMade {
+    font-size: 15px;
+  }
+  footer .fLinks {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 56%;
+  }
+  footer .fLinks .fLinks-pack {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 30%;
+  }
+  footer .fLinks .fLinks-pack .linksHead {
+    font-size: 17px;
+    padding-bottom: 20px;
+  }
+  footer .fLinks .fLinks-pack a {
+    font-size: 15px;
+  }
+  .arows, .dots {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .arows .arow, .dots .arow {
+    border: 2px black solid;
+    cursor: pointer;
+    font-size: 40px;
+    margin: 10px;
+    text-align: center;
+  }
+  .arows .arow:hover, .dots .arow:hover {
+    background-color: #451EC5;
+  }
+  .arows .bulit, .dots .bulit {
+    border-radius: 50%;
+    border: 1px solid black;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 40px;
+    height: 10px;
+    margin: 5px;
+    width: 10px;
+  }
+  .arows .bulit.active, .dots .bulit.active {
+    background-color: #bdbdbd;
+  }
+  #allCards {
+    scroll-behavior: smooth;
+  }
+}
+
+@media (min-width: 1300px) and (max-width: 2560px) {
+  .topNav .logo {
+    font-size: 27px;
+  }
+  .topNav .navLinks .navLinks-1 a, .topNav .navLinks .navLinks-2 a {
+    font-size: 20px;
+    margin: 10px;
+  }
+  .topNav .navLinks .navLinks-1 {
+    margin-right: 250px;
+  }
+  .section-2 .s2Content .rates .rPargraph {
+    font-size: 20px;
+  }
+  .section-2 .s2Content .s2Head {
+    font-size: 60px;
+  }
+  .section-2 .s2Content .s2Pargraph {
+    font-size: 19px;
+  }
+  .section-2 .s2Content .s2Content2 .s2Button {
+    font-size: 19px;
+    padding: 20px 30px;
+  }
+  .section-2 .s2Content .s2Content2 .s2Examples {
+    font-size: 20px;
+    padding-left: 30px;
+  }
+  .section-2 .s2Content .s2List {
+    padding-right: 10px;
+  }
+  .section-2 .s2Content .s2List .checkMark {
+    font-size: 20px;
+    padding: 2px 20px 10px 30px;
+  }
+  .section-3 {
+    height: 1350px;
+  }
+  .section-3 .s3Title {
+    font-size: 20px;
+  }
+  .section-3 .s3Head {
+    margin-top: 20px;
+    font-size: 43px;
+    padding-right: 550px;
+  }
+  .section-3 .fetures .s3Fetures .fTitle {
+    font-size: 18px;
+  }
+  .section-3 .fetures .s3Fetures .fPargraph {
+    font-size: 19px;
+  }
+  .section-3 .s3-B {
+    margin-top: 70px;
+  }
+  .section-3 .s3-B .s3-BContent {
+    height: 200px;
+  }
+  .section-3 .s3-B .s3-BContent .s3-BHead {
+    font-size: 38px;
+  }
+  .section-3 .s3-B .s3-BContent .s3-BPargraph {
+    font-size: 19px;
+    line-height: 25px;
+  }
+  .section-3 .s3-B .s3-BContent .s3-BButton {
+    font-size: 18px;
+    padding: 23px;
+  }
+  .section-3 .s3-C {
+    padding-top: 70px;
+  }
+  .section-3 .s3-C .clientCard {
+    min-width: 35%;
+    height: 300px;
+  }
+  .section-3 .s3-C .clientCard .cardHeader .cHImage {
+    width: 53px;
+  }
+  .section-3 .s3-C .clientCard .cardPargraph {
+    font-size: 20px;
+  }
+  footer .fContent {
+    width: 33%;
+  }
+  footer .fContent .fHead {
+    font-size: 22px;
+  }
+  footer .fContent .fPargraph, footer .fContent .fMade {
+    font-size: 18px;
+  }
+  footer .fContent .fMade {
+    padding-top: 20px;
+  }
+  footer .fLinks {
+    width: 60%;
+  }
+  footer .fLinks .fLinks-pack .linksHead {
+    font-size: 22px;
+  }
+  footer .fLinks .fLinks-pack a {
+    font-size: 18px;
+    padding-bottom: 10px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
