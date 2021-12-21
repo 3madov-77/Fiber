@@ -1,9 +1,9 @@
 let allCards = document.getElementById("allCards") || "";
 let cards = document.getElementsByClassName("clientCard");
-let scrollAmuont = 0;
-let avilableWidth = allCards.scrollWidth - allCards.clientWidth;
+let scrollAmount = 0;
+let availableWidth = allCards.scrollWidth - allCards.clientWidth;
 let oneCardWidth, extraWidth;
-let bulit = document.getElementsByClassName("bulit");
+let built = document.getElementsByClassName("bulit");
 let parent = document.getElementsByClassName("dots")[0];
 let numberOfDots = Math.ceil(cards.length / 3);
 let bit = oneCardWidth * 3;
@@ -13,135 +13,135 @@ let body = document.getElementsByTagName("body")[0];
 
 
 /**
- * to re calculate sizes for cards width and avilable scroll width based on screen size also it will genrate the scroll dots and bind the function for each dot
+ * to re calculate sizes for cards width and available scroll width based on screen size also it will generate the scroll dots and bind the function for each dot
  */
-const calculatSizes = () => {
+const calculateSizes = () => {
   // clean dots parent
   parent.innerHTML = "";
-  // genrate dots
+  // generate dots
   for (let j = 0; j < numberOfDots; j++) {
     parent.innerHTML += `<span class="bulit"></span>`;
-    bulit[0].classList.add("active");
+    built[0].classList.add("active");
   }
   // bind click for each dot
-  for (let i = 0; i < bulit.length; i++) {
-    bulit[i].addEventListener("click", bindClick(i));
+  for (let i = 0; i < built.length; i++) {
+    built[i].addEventListener("click", bindClick(i));
   }
-  // requierd math..
-  scrollAmuont = 0;
-  avilableWidth = allCards.scrollWidth - allCards.clientWidth;
+  // required math..
+  scrollAmount = 0;
+  availableWidth = allCards.scrollWidth - allCards.clientWidth;
   oneCardWidth = cards[0].clientWidth + 30;
-  extraWidth = avilableWidth - oneCardWidth * (cards.length - 3);
+  extraWidth = availableWidth - oneCardWidth * (cards.length - 3);
   bit = oneCardWidth * 3;
-  allCards.scroll(scrollAmuont, 0);
+  allCards.scroll(scrollAmount, 0);
   // make sure each new resize starts with the first dot active
   if (oldDot) {
-    bulit[oldDot].classList.remove("active");
+    built[oldDot].classList.remove("active");
     oldDot = 0;
-    bulit[0].classList.add("active");
+    built[0].classList.add("active");
   }
 }
 
 
 /**
  * function will add 'active' class to the dot that match the scroll amount
- * @param {number} scrollAmuont 
+ * @param {number} scrollAmount
  */
-const witchDotActve = (scrollAmuont) => {
+const witchDotActive = (scrollAmount) => {
   let dotIndex = 0;
-  scrollAmuont > 0 ? (dotIndex = Math.floor(scrollAmuont / bit)) : "";
+  scrollAmount > 0 ? (dotIndex = Math.floor(scrollAmount / bit)) : "";
 
-  scrollAmuont == avilableWidth ? (dotIndex = bulit.length - 1) : "";
+  scrollAmount == availableWidth ? (dotIndex = built.length - 1) : "";
 
-  bulit[oldDot].classList.remove("active");
+  built[oldDot].classList.remove("active");
   oldDot = dotIndex;
-  bulit[dotIndex].classList.add("active");
+  built[dotIndex].classList.add("active");
 }
 
 
 /**
- * trigers scrolling Right using the symble in the HTML side beside adding unlimted scroll in case teh avilable scroll finshed
+ * triggers scrolling Right using the symbol in the HTML side beside adding unlimited scroll in case teh available scroll finished
  */
 const goRight = () => {
-  if (scrollAmuont < avilableWidth) {
-    // safty check..
-    scrollAmuont + oneCardWidth > avilableWidth
-      ? (scrollAmuont = avilableWidth)
-      : (scrollAmuont += oneCardWidth);
+  if (scrollAmount < availableWidth) {
+    // safety check..
+    scrollAmount + oneCardWidth > availableWidth
+      ? (scrollAmount = availableWidth)
+      : (scrollAmount += oneCardWidth);
 
-    // in case manual scroll wasnt in one card amount .. so this stament will let the next click match axactly the next card, so the next click will continue normaly..
-    if(scrollAmuont % oneCardWidth && scrollAmuont != avilableWidth){
-      scrollAmuont -= scrollAmuont % oneCardWidth
+    // in case manual scroll wasn't in one card amount .. so this statement will let the next click match exactly the next card, so the next click will continue normally..
+    if(scrollAmount % oneCardWidth && scrollAmount != availableWidth){
+      scrollAmount -= scrollAmount % oneCardWidth
     }
 
 
-    allCards.scroll(scrollAmuont, 0);
-    witchDotActve(scrollAmuont);
+    allCards.scroll(scrollAmount, 0);
+    witchDotActive(scrollAmount);
   } else {
-    // unlimted scroll
-    scrollAmuont = 0;
+    // unlimited scroll
+    scrollAmount = 0;
     allCards.scroll(0, 0);
-    witchDotActve(scrollAmuont);
+    witchDotActive(scrollAmount);
   }
 }
 
 
 /**
- * trigers scrolling Left using the symble in the HTML side beside adding unlimted scroll in case teh avilable scroll finshed
+ * triggers scrolling Left using the symbol in the HTML side beside adding unlimited scroll in case teh available scroll finished
  */
 const goLeft = () => {
-  if (scrollAmuont == avilableWidth) {
-    scrollAmuont -= extraWidth;
+  if (scrollAmount == availableWidth) {
+    scrollAmount -= extraWidth;
     console.log('hi there ', extraWidth);
-    allCards.scroll(scrollAmuont, 0);
-  } else if (scrollAmuont > 0) {
-    // safty check..
-    scrollAmuont - oneCardWidth < 0
-      ? (scrollAmuont = 0)
-      : (scrollAmuont -= oneCardWidth);
-    
-    // in case manual scroll wasnt in one card amount .. so this stament will let the next click will take the extras and start with new card dirctly..
-    if(scrollAmuont % oneCardWidth && scrollAmuont){
-      scrollAmuont -= scrollAmuont % oneCardWidth
+    allCards.scroll(scrollAmount, 0);
+  } else if (scrollAmount > 0) {
+    // safety check..
+    scrollAmount - oneCardWidth < 0
+      ? (scrollAmount = 0)
+      : (scrollAmount -= oneCardWidth);
+
+    // in case manual scroll wasn't in one card amount .. so this statement will let the next click will take the extras and start with new card directly..
+    if(scrollAmount % oneCardWidth && scrollAmount){
+      scrollAmount -= scrollAmount % oneCardWidth
     }
 
-    allCards.scroll(scrollAmuont, 0);
-    witchDotActve(scrollAmuont);
-  } else if (!scrollAmuont) {
-    // unlimted scroll
-    scrollAmuont = avilableWidth;
-    allCards.scroll(avilableWidth, 0);
-    witchDotActve(scrollAmuont);
+    allCards.scroll(scrollAmount, 0);
+    witchDotActive(scrollAmount);
+  } else if (!scrollAmount) {
+    // unlimited scroll
+    scrollAmount = availableWidth;
+    allCards.scroll(availableWidth, 0);
+    witchDotActive(scrollAmount);
   }
 }
 
 
 /**
- * this function will reseve the clicked dot index and tirgers the callback function
- * @param {number} i 
+ * this function will reserve the clicked dot index and tigress the callback function
+ * @param {number} i
  * @returns callBackFunction
  */
 const bindClick = (i) => {
   return () => {
-    bulit[oldDot].classList.remove("active");
+    built[oldDot].classList.remove("active");
     oldDot = i;
-    bulit[i].classList.add("active");
+    built[i].classList.add("active");
 
     let s = bit * i;
-    scrollAmuont = s;
-    allCards.scroll(scrollAmuont, 0);
+    scrollAmount = s;
+    allCards.scroll(scrollAmount, 0);
   };
 }
 
 
 /**
- * togle the 'navLinks' container style based on the attached animation
+ * toggle the 'navLinks' container style based on the attached animation
  */
 function showLinks() {
   if (links.style.display == "flex") {
     links.classList.remove("animatIn");
     links.classList.add("animatOut");
-    // waiting the animationto complete
+    // waiting the animation complete
     setTimeout(() => {
       links.style.display = "none";
     }, 300);
@@ -153,7 +153,7 @@ function showLinks() {
 }
 
 
-// listner for any screen resize
+// listener for any screen resize
 window.addEventListener(
   "resize",
   function () {
@@ -162,16 +162,16 @@ window.addEventListener(
     } else {
       links.style.display = "none";
     }
-    calculatSizes();
+    calculateSizes();
   },
   true
 );
 
 
-// any scroll listner
+// any scroll listener
 allCards.addEventListener("scroll", function(ev){
-  scrollAmuont = ev.target.scrollLeft;
-  witchDotActve(ev.target.scrollLeft);
+  scrollAmount = ev.target.scrollLeft;
+  witchDotActive(ev.target.scrollLeft);
 })
 
-calculatSizes();
+calculateSizes();
